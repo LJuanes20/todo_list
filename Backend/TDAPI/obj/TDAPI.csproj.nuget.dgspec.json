@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\TDAPI.csproj": {}
+    "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\TDAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\TDAPI.csproj": {
+    "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\TDAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\TDAPI.csproj",
+        "projectUniqueName": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\TDAPI.csproj",
         "projectName": "TDAPI",
-        "projectPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\TDAPI.csproj",
+        "projectPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\TDAPI.csproj",
         "packagesPath": "C:\\Users\\LuisOsvaldoJuanesHin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\obj\\",
+        "outputPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,20 @@
+# === .NET / Visual Studio ===
+**/bin/
+**/obj/
+**/.vs/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# === Editor / OS general ===
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# === Secrets (.NET) ===
+**/appsettings.Development.json
+**/appsettings.Local.json
+*.pfx
+*.key

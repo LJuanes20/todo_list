@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\desktop\\todo list\\tdapi\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\desktop\\todo list\\tdapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\desktop\\todo list\\tdapi\\models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\desktop\\todo list\\tdapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -228,9 +228,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -240,9 +240,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ActivityItem.cs",
-              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Models\\ActivityItem.cs",
+              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Models\\ActivityItem.cs",
               "RelativeDocumentMoniker": "Models\\ActivityItem.cs",
-              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Models\\ActivityItem.cs",
+              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Models\\ActivityItem.cs",
               "RelativeToolTip": "Models\\ActivityItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -252,22 +252,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T23:24:12.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-20T23:24:12.249Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ActivityController.cs",
-              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Controllers\\ActivityController.cs",
+              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Controllers\\ActivityController.cs",
               "RelativeDocumentMoniker": "Controllers\\ActivityController.cs",
-              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\Controllers\\ActivityController.cs",
+              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Controllers\\ActivityController.cs",
               "RelativeToolTip": "Controllers\\ActivityController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
