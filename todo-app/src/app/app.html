@@ -1,0 +1,80 @@
+<div class="container">
+  <header class="header">
+    <h1>📝 Todo List</h1>
+    <div class="stats">
+      <span class="badge pending">{{ pendingCount }} pending</span>
+      <span class="badge completed">{{ completedCount }} done</span>
+    </div>
+  </header>
+
+  @if (errorMessage) {
+    <div class="error-banner">{{ errorMessage }}</div>
+  }
+
+  <section class="add-section">
+    <h2>Add New Task</h2>
+    <div class="add-form">
+      <input
+        type="text"
+        [(ngModel)]="newTitle"
+        placeholder="Task title..."
+        class="input-title"
+        (keyup.enter)="addTodo()"
+      />
+      <input
+        type="text"
+        [(ngModel)]="newDescription"
+        placeholder="Description (optional)..."
+        class="input-desc"
+      />
+      <button class="btn btn-add" (click)="addTodo()" [disabled]="!newTitle.trim()">
+        Add Task
+      </button>
+    </div>
+  </section>
+
+  <section class="list-section">
+    @if (loading()) {
+      <div class="loading">Loading...</div>
+    } @else if (todos().length === 0) {
+      <div class="empty-state">No tasks yet. Add one above!</div>
+    } @else {
+      <ul class="todo-list">
+        @for (todo of todos(); track todo.id) {
+          <li class="todo-item" [class.completed]="todo.isCompleted">
+            @if (editingId === todo.id) {
+              <div class="edit-form">
+                <input type="text" [(ngModel)]="editTitle" class="input-title" />
+                <input type="text" [(ngModel)]="editDescription" class="input-desc" placeholder="Description (optional)..." />
+                <div class="edit-actions">
+                  <button class="btn btn-save" (click)="saveEdit(todo)">Save</button>
+                  <button class="btn btn-cancel" (click)="cancelEdit()">Cancel</button>
+                </div>
+              </div>
+            } @else {
+              <div class="todo-content">
+                <input
+                  type="checkbox"
+                  [checked]="todo.isCompleted"
+                  (change)="toggleComplete(todo)"
+                  class="checkbox"
+                />
+                <div class="todo-text">
+                  <span class="todo-title">{{ todo.title }}</span>
+                  @if (todo.description) {
+                    <span class="todo-desc">{{ todo.description }}</span>
+                  }
+                  <span class="todo-date">Created {{ todo.createdAt | date:'short' }}</span>
+                </div>
+                <div class="todo-actions">
+                  <button class="btn btn-edit" (click)="startEdit(todo)" [disabled]="todo.isCompleted">✏️</button>
+                  <button class="btn btn-delete" (click)="deleteTodo(todo.id)">🗑️</button>
+                </div>
+              </div>
+            }
+          </li>
+        }
+      </ul>
+    }
+  </section>
+</div>

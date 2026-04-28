@@ -1,0 +1,18 @@
+# .NET build output
+TodoApi/bin/
+TodoApi/obj/
+TodoApi/todo.db
+TodoApi/todo.db-shm
+TodoApi/todo.db-wal
+
+# Angular build output
+todo-app/dist/
+todo-app/node_modules/
+todo-app/.angular/
+
+# Secrets
+**/appsettings.Production.json
+
+# OS files
+.DS_Store
+Thumbs.db
