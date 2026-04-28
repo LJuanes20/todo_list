@@ -1,0 +1,6 @@
+@TDAPI_HostAddress = http://localhost:5057
+
+GET {{TDAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
