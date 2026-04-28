@@ -5,11 +5,10 @@ import { Activity } from '../../models/activity.model';
 import { ActivityService } from '../../services/activity.service';
 
 @Component({
-  selector: 'app-activity-form',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './activity-form.component.html',
-  styleUrls: ['./activity-form.component.css']
+    selector: 'app-activity-form',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './activity-form.component.html',
+    styleUrls: ['./activity-form.component.css']
 })
 export class ActivityFormComponent implements OnChanges {
   @Input() activity: Partial<Activity> | null = null;

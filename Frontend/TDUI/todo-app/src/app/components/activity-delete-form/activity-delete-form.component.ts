@@ -3,11 +3,10 @@ import { Activity } from '../../models/activity.model';
 import { ActivityService } from '../../services/activity.service';
 
 @Component({
-  selector: 'app-activity-delete-form',
-  standalone: true,
-  imports: [],
-  templateUrl: './activity-delete-form.component.html',
-  styleUrl: './activity-delete-form.component.css'
+    selector: 'app-activity-delete-form',
+    imports: [],
+    templateUrl: './activity-delete-form.component.html',
+    styleUrl: './activity-delete-form.component.css'
 })
 export class ActivityDeleteFormComponent implements OnChanges {
   @Input() activity: Partial<Activity> | null = null;

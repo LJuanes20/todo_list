@@ -9,11 +9,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTrash, faCheck, faClock, faPlus, faArrowDown, faArrowUp, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-activity-list',
-  standalone: true,
-  imports: [CommonModule, ModalComponent, ActivityFormComponent, ActivityDeleteFormComponent, FontAwesomeModule],
-  templateUrl: './activity-list.component.html',
-  styleUrls: ['./activity-list.component.css']
+    selector: 'app-activity-list',
+    imports: [CommonModule, ModalComponent, ActivityFormComponent, ActivityDeleteFormComponent, FontAwesomeModule],
+    templateUrl: './activity-list.component.html',
+    styleUrls: ['./activity-list.component.css']
 })
 export class ActivityListComponent implements OnInit {
   activities: Activity[] = [];
