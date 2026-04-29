@@ -31,3 +31,10 @@
   margin-top: 0.5rem;
   font-size: 0.9rem;
 }
+
+.char-count {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: right;
+  margin-top: 4px;
+}

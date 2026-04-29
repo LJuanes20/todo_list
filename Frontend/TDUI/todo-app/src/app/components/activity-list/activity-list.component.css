@@ -1,65 +1,17 @@
 .container {
   max-width: 700px;
   margin: 40px auto;
-  font-family: Arial, sans-serif;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12);
+  font-family: inherit;
 }
 
 h1 { margin-bottom: 20px; }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #fff;
-}
-
-li.completed {
-  opacity: 0.6;
-  text-decoration: line-through;
-}
-
-.task-name {
-  font-weight: bold;
-  display: block;
-}
-
-.task-desc {
-  font-size: 0.85em;
-  color: #666;
-  display: block;
-}
-
-.badge {
-  font-size: 0.8em;
-  padding: 4px 10px;
-  border-radius: 12px;
-  background: #ffeeba;
-  white-space: nowrap;
-}
-
-.badge.done {
-  background: #d4edda;
-}
-
-.loading, .empty { color: #888; }
+.empty { color: #888; }
 .error { color: red; }
-
-.separator {
-  list-style: none;
-  margin: 18px 0;
-  border-top: 2px solid #d0d7de;
-  height: 0;
-  padding: 0;
-}
 
 .task-list {
   list-style: none;
@@ -102,17 +54,55 @@ li.completed {
 
 .task-info {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.task-checkbox input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-info-container {
+  display: flex;
   flex-direction: column;
 }
 
-.task-info.completed .task-name,
-.task-info.completed .task-desc {
+.task-info-container.completed .task-name,
+.task-info-container.completed .task-desc {
   text-decoration: line-through;
   opacity: 0.7;
 }
 
 .task-name {
   font-weight: 600;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.task-name:hover {
+  text-decoration: underline;
 }
 
 .task-desc {
@@ -121,18 +111,25 @@ li.completed {
 }
 
 .task-date {
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   margin-top: 4px;
   color: #000000;
 }
 
 .badge {
-  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #ffeeba;
   font-size: 0.9rem;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .badge.done {
+  background: #d4edda;
   opacity: 0.85;
 }
 
@@ -146,7 +143,7 @@ li.completed {
 }
 
 .separator span {
-  background: white;
+  background: #ffffff;
   padding: 0 12px;
   position: relative;
   top: -20px;
@@ -163,38 +160,6 @@ li.completed {
 .clickable:hover span {
   color: #374151;
 }
-
-.margin-t-2-5{
-  margin-top: 2.5rem;
-}
-
-.margin-b-2-5{
-  margin-top: 2.5rem;
-}
-
-.margin-t-1{
-  margin-top: 1rem;
-}
-
-.margin-b-1{
-  margin-bottom: 1rem;
-}
-
-.margin-1{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.margin-0-75{
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.margin-0-50{
-  margin-top: 0.50rem;
-  margin-bottom: 0.50rem;
-}
-
 
 .header {
   display: flex;
@@ -287,3 +252,108 @@ li.completed {
   background: #fee2e2;
 }
 
+.empty p {
+  font-size: 2.5rem;
+  color: #b6b6b6;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.empty .error {
+  font-size: 1rem;
+  color: #bd4343;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.error-banner-close {
+  border: none;
+  background: transparent;
+  color: #991b1b;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.error-banner-close:hover {
+  background: #fecaca;
+}
+
+/* ===========================================
+   RESPONSIVE: MÓVIL (≤ 600px)
+   =========================================== */
+@media (max-width: 600px) {
+  .container {
+    margin: 16px 12px;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .add-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .task-item {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .task-info {
+    gap: 8px;
+  }
+
+  .task-checkbox input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .task-name {
+    font-size: 0.95rem;
+  }
+
+  /* En móvil ocultamos el texto de la badge, dejamos solo el icono */
+  .badge {
+    font-size: 0;
+    padding: 4px 6px;
+  }
+
+  .badge fa-icon {
+    font-size: 0.85rem;
+  }
+
+  /* Cuando los botones están dentro del footer del modal en móvil, ocupan todo el ancho */
+  .primary-btn,
+  .secondary-btn,
+  .danger-btn {
+    width: 100%;
+  }
+}
+
+.button-section-delete{
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}

@@ -29,6 +29,10 @@ export class ActivityService {
     return this.http.put<Activity>(`${this.apiUrl}/${id}`, activity);
   }
 
+  setStatus(id: number, isCompleted: boolean): Observable<Activity> {
+    return this.http.patch<Activity>(`${this.apiUrl}/${id}/status`, { isCompleted });
+  }
+
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }

@@ -1,12 +1,11 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Activity } from '../../models/activity.model';
 import { ActivityService } from '../../services/activity.service';
 
 @Component({
     selector: 'app-activity-form',
-    imports: [CommonModule, FormsModule],
+    imports: [FormsModule],
     templateUrl: './activity-form.component.html',
     styleUrls: ['./activity-form.component.css']
 })
@@ -67,12 +66,33 @@ export class ActivityFormComponent implements OnChanges {
       },
       error: (err) => {
         this.isSaving = false;
-        this.errorMessage = this.isEditMode
-          ? 'Error al actualizar la tarea.'
-          : 'Error al crear la tarea.';
-        console.error(err);
+        this.errorMessage = this.buildErrorMessage(err);
+        console.error('Error al guardar tarea:', err);
       }
     });
+  }
+
+  /**
+   * Construye un mensaje de error legible para el usuario, incluyendo
+   * el status HTTP y los detalles que devuelva el backend (validaciones, etc.).
+   */
+  private buildErrorMessage(err: any): string {
+    const action = this.isEditMode ? 'actualizar' : 'crear';
+    const status = err?.status ?? '?';
+
+    // ASP.NET Core con [ApiController] devuelve un ProblemDetails con campo "errors"
+    // cuando falla validación por DataAnnotations.
+    const validationErrors = err?.error?.errors;
+    if (validationErrors && typeof validationErrors === 'object') {
+      const messages = Object.entries(validationErrors)
+        .map(([field, msgs]) => `${field}: ${(msgs as string[]).join(', ')}`)
+        .join(' | ');
+      return `Error al ${action} la tarea (HTTP ${status}). ${messages}`;
+    }
+
+    // Otros errores: title del ProblemDetails, o mensaje genérico
+    const detail = err?.error?.title || err?.error?.detail || err?.message || 'Sin detalles';
+    return `Error al ${action} la tarea (HTTP ${status}). ${detail}`;
   }
 
   cancel(): void {

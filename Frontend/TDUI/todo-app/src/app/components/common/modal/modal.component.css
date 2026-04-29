@@ -65,3 +65,35 @@
     transform: translateY(0) scale(1);
   }
 }
+
+/* Móvil: el modal ocupa casi toda la pantalla y los botones del footer se apilan */
+@media (max-width: 480px) {
+  .modal-backdrop {
+    padding: 8px;
+    align-items: flex-end;
+  }
+
+  .modal {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-header {
+    padding: 14px 16px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.05rem;
+  }
+
+  .modal-body {
+    padding: 16px;
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+    padding: 14px 16px;
+  }
+}

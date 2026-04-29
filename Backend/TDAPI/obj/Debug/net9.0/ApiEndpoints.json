@@ -90,7 +90,17 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "TDAPI.Models.ActivityItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "TDAPI.Controllers.ActivityController",
@@ -107,5 +117,36 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TDAPI.Controllers.ActivityController",
+    "Method": "SetStatus",
+    "RelativePath": "api/Activity/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TDAPI.Controllers.SetStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TDAPI.Models.ActivityItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

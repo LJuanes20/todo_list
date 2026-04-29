@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:controllers\\activitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\infraestructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:infraestructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|c:\\users\\luisosvaldojuaneshin\\documents\\git\\todo list angular asp net sql server\\todo_list\\backend\\tdapi\\models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C5FA672-9B15-C808-2633-9AA36727E22B}|TDAPI.csproj|solutionrelative:models\\activityitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 52,
+          "SelectedChildIndex": 53,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Infraestructure\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Infraestructure\\AppDBContext.cs",
+              "RelativeToolTip": "Infraestructure\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T13:35:42.684Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{75c83ab3-5264-45e8-ad32-5c8a41ad477d}"
@@ -232,13 +249,14 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-20T23:47:53.944Z"
+              "WhenOpened": "2026-04-20T23:47:53.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ActivityItem.cs",
               "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Models\\ActivityItem.cs",
               "RelativeDocumentMoniker": "Models\\ActivityItem.cs",
@@ -250,15 +268,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-20T23:24:12.249Z"
+              "WhenOpened": "2026-04-20T23:24:12.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -268,7 +287,7 @@
               "RelativeDocumentMoniker": "Controllers\\ActivityController.cs",
               "ToolTip": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\Controllers\\ActivityController.cs",
               "RelativeToolTip": "Controllers\\ActivityController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-20T23:24:00.24Z",
               "EditorCaption": ""
