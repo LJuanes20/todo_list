@@ -160,5 +160,5 @@ npm test
 ## Autor
 **Luis Osvaldo Juanes Hinostroza**
 
-- GitHub: [@LJuanes20](https://github.com/<tu-usuario>)
+- GitHub: [@LJuanes20](https://github.com/LJuanes20)
 - LinkedIn: [in/ljuanes25](https://www.linkedin.com/in/ljuanes25/)
