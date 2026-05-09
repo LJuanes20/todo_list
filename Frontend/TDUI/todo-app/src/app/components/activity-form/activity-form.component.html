@@ -1,0 +1,26 @@
+<form (ngSubmit)="save()" novalidate>
+    <div class="form-group">
+        <label for="taskName">Título</label>
+        <input id="taskName" type="text" name="name" [(ngModel)]="model.name"
+            maxlength="200" required
+            placeholder="Escribe el nombre de la tarea" />
+        <small class="char-count">{{ (model.name?.length || 0) }} / 200</small>
+    </div>
+
+    <div class="form-group">
+        <label for="taskDescription">Descripción</label>
+        <textarea id="taskDescription" rows="4" name="description" [(ngModel)]="model.description"
+            maxlength="2000"
+            placeholder="Escribe una descripción"></textarea>
+        <small class="char-count">{{ (model.description?.length || 0) }} / 2000</small>
+    </div>
+
+    <div class="form-group">
+        <label for="taskDate">Fecha</label>
+        <input id="taskDate" type="date" name="createdAt" [(ngModel)]="model.createdAt" />
+    </div>
+
+    @if (errorMessage) {
+        <div class="error-msg">{{ errorMessage }}</div>
+    }
+</form>

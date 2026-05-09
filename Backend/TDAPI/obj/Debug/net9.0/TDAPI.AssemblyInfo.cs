@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TDAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d13ac77f9d2a4c284b623dc39b6aedf3236bf656")]
 [assembly: System.Reflection.AssemblyProductAttribute("TDAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TDAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

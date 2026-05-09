@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FwTsMABkmio=",
+  "dgSpecHash": "2BR80i57ssw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LuisOsvaldoJuanesHin\\Desktop\\ToDo List\\TDAPI\\TDAPI.csproj",
+  "projectFilePath": "C:\\Users\\LuisOsvaldoJuanesHin\\Documents\\Git\\ToDo List Angular ASP NET SQL SERVER\\todo_list\\Backend\\TDAPI\\TDAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LuisOsvaldoJuanesHin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\LuisOsvaldoJuanesHin\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

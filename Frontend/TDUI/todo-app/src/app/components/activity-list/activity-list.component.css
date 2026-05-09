@@ -1,0 +1,359 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12);
+  font-family: inherit;
+}
+
+h1 { margin-bottom: 20px; }
+
+.empty { color: #888; }
+.error { color: red; }
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  max-height: 120px;
+  opacity: 1;
+  transform: scaleY(1);
+  transition:
+    max-height 0.28s ease,
+    opacity 0.22s ease,
+    margin 0.28s ease,
+    padding 0.28s ease,
+    transform 0.28s ease;
+}
+
+.collapsed-completed {
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 0;
+  transform: scaleY(0.96);
+  pointer-events: none;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.task-checkbox input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-info-container.completed .task-name,
+.task-info-container.completed .task-desc {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-name {
+  font-weight: 600;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.task-name:hover {
+  text-decoration: underline;
+}
+
+.task-desc {
+  font-size: 0.92rem;
+  color: #6b7280;
+}
+
+.task-date {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: #000000;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: #ffeeba;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badge.done {
+  background: #d4edda;
+  opacity: 0.85;
+}
+
+.separator {
+  list-style: none;
+  margin: 45px 0 10px;
+  padding: 0;
+  border-top: 2px solid #d0d7de;
+  position: relative;
+  text-align: center;
+}
+
+.separator span {
+  background: #ffffff;
+  padding: 0 12px;
+  position: relative;
+  top: -20px;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover span {
+  color: #374151;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.add-btn {
+  border: none;
+  background: #111827;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #111827;
+  color: white;
+}
+
+.primary-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.danger-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #dc2626;
+  color: white;
+}
+
+.danger-btn:hover {
+  background: #b91c1c;
+}
+
+.danger-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 6px 8px;
+  border-radius: 8px;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+}
+
+.empty p {
+  font-size: 2.5rem;
+  color: #b6b6b6;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.empty .error {
+  font-size: 1rem;
+  color: #bd4343;
+  font-weight: bold;
+  text-align: center;
+}
+
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.error-banner-close {
+  border: none;
+  background: transparent;
+  color: #991b1b;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.error-banner-close:hover {
+  background: #fecaca;
+}
+
+/* ===========================================
+   RESPONSIVE: MÓVIL (≤ 600px)
+   =========================================== */
+@media (max-width: 600px) {
+  .container {
+    margin: 16px 12px;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .add-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .task-item {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .task-info {
+    gap: 8px;
+  }
+
+  .task-checkbox input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+  }
+
+  .task-name {
+    font-size: 0.95rem;
+  }
+
+  /* En móvil ocultamos el texto de la badge, dejamos solo el icono */
+  .badge {
+    font-size: 0;
+    padding: 4px 6px;
+  }
+
+  .badge fa-icon {
+    font-size: 0.85rem;
+  }
+
+  /* Cuando los botones están dentro del footer del modal en móvil, ocupan todo el ancho */
+  .primary-btn,
+  .secondary-btn,
+  .danger-btn {
+    width: 100%;
+  }
+}
+
+.button-section-delete{
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}

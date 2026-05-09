@@ -5,6 +5,11 @@ using TDAPI.Models;
 
 namespace TDAPI.Controllers
 {
+    public class SetStatusRequest
+    {
+        public bool IsCompleted { get; set; }
+    }
+
     [ApiController]
     [Route("api/[controller]")]
     public class ActivityController : ControllerBase
@@ -45,7 +50,7 @@ namespace TDAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, ActivityItem item)
+        public async Task<ActionResult<ActivityItem>> Update(int id, ActivityItem item)
         {
             if (id != item.Id)
                 return BadRequest();
@@ -53,7 +58,7 @@ namespace TDAPI.Controllers
             _context.Entry(item).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(item);
         }
 
         [HttpDelete("{id}")]
@@ -68,6 +73,18 @@ namespace TDAPI.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        [HttpPatch("{id}/status")]
+        public async Task<ActionResult<ActivityItem>> SetStatus(int id, [FromBody] SetStatusRequest request)
+        {
+            var item = await _context.ActivityItems.FindAsync(id);
+            if (item == null)
+                return NotFound();
+
+            item.IsCompleted = request.IsCompleted;
+            await _context.SaveChangesAsync();
+            return Ok(item);
         }
     }
 }

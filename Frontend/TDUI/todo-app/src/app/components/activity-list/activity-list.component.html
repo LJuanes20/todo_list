@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="header">
+    <h1>Mis Tareas</h1>
+    <button class="add-btn" type="button" (click)="openAddModal()">
+      Agregar tarea <fa-icon [icon]="faPlus"></fa-icon>
+    </button>
+  </div>
+
+  @if (existError && activities.length > 0) {
+    <div class="error-banner" role="alert">
+      <span>{{ errorMessage }}</span>
+      <button type="button" class="error-banner-close" (click)="dismissError()" aria-label="Cerrar">✕</button>
+    </div>
+  }
+
+  @if (isLoading){
+  <app-loading></app-loading>
+  }
+
+  @if (!isLoading && activities.length === 0) {
+  <div class="empty">
+    <p>No hay tareas registradas.</p>
+    @if (existError) {
+    <p class="error">{{ errorMessage }}</p>
+    }
+  </div>
+  }
+
+  @if (!isLoading && sortedActivities.length > 0) {
+  <ul class="task-list">
+    @for (activity of sortedActivities; track activity.id; let i = $index) {
+
+    @if (activity.isCompleted && (i === 0 || !sortedActivities[i - 1].isCompleted)) {
+    <li class="separator clickable" (click)="toggleCompleted(); $event.stopPropagation();">
+      <span><fa-icon [icon]="showCompleted ? faArrowDown : faArrowRight"></fa-icon> Completadas ({{ completedCount
+        }})</span>
+    </li>
+    }
+
+    <li class="task-item"
+      [class.collapsed-completed]="activity.isCompleted && !showCompleted">
+      <div class="task-info-container" [class.completed]="activity.isCompleted">
+        
+        <div class="task-info">
+          <div class="task-checkbox">
+            <input type="checkbox" [checked]="activity.isCompleted"
+              (change)="setStatus(activity, !activity.isCompleted); $event.stopPropagation();"
+              aria-label="Marcar tarea como {{ activity.isCompleted ? 'pendiente' : 'completada' }}">
+          </div>
+          <div class="task-text">
+            <button type="button" class="task-name" (click)="openEditModal(activity)">{{ activity.name }}</button>
+            @if (activity.description) {
+              <span class="task-desc">{{ activity.description.length > 100 ? activity.description.substring(0, 100) + '...' :  activity.description }}</span>
+            }
+            <span class="task-date">{{ activity.createdAt | date:'dd/MM/yyyy' }}</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="task-actions">
+        <span class="badge" [class.done]="activity.isCompleted">
+          <fa-icon [icon]="activity.isCompleted ? faCheck : faPending"></fa-icon>
+          {{ activity.isCompleted ? 'Completada' : 'Pendiente' }}
+        </span>
+        <button class="delete-btn" type="button" (click)="openDeleteModal(activity); $event.stopPropagation();"
+          aria-label="Eliminar tarea">
+          <fa-icon [icon]="faDelete"></fa-icon>
+        </button>
+      </div>
+    </li>
+    }
+  </ul>
+  }
+</div>
+
+<app-modal [isOpen]="isModalOpen" [title]="modalTitle" (closed)="closeModal()">
+
+  @if (modalMode !== 'delete') {
+  <app-activity-form #editForm [activity]="selectedActivity" (saved)="onActivitySaved($event)"
+    (cancelled)="closeModal()">
+  </app-activity-form>
+
+  <div modal-footer>
+    <button class="secondary-btn" type="button" (click)="closeModal()">
+      Cancelar
+    </button>
+    <button class="primary-btn" type="button" [disabled]="!editForm.canSave" (click)="editForm.save()">
+      Guardar
+    </button>
+  </div>
+  } @else {
+  <app-activity-delete-form #deleteForm [activity]="selectedActivity" (saved)="onActivityDeleted($event)"
+    (cancelled)="closeModal()">
+  </app-activity-delete-form>
+
+  <div modal-footer class="button-section-delete">
+    <button class="secondary-btn" type="button" (click)="closeModal()">
+      Cancelar
+    </button>
+    <button class="danger-btn" type="button" [disabled]="deleteForm.isSaving" (click)="deleteForm.save()">
+      Eliminar
+    </button>
+  </div>
+  }
+</app-modal>
