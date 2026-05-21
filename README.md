@@ -20,7 +20,7 @@ Asegúrate de tener instalado lo siguiente antes de empezar:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/todo_list.git
+git clone https://github.com/LJuanes20/todo_list.git
 cd todo_list
 ```
 
