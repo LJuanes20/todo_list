@@ -20,7 +20,7 @@ Asegúrate de tener instalado lo siguiente antes de empezar:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/todo_list.git
+git clone https://github.com/LJuanes20/todo_list.git
 cd todo_list
 ```
 
@@ -160,5 +160,5 @@ npm test
 ## Autor
 **Luis Osvaldo Juanes Hinostroza**
 
-- GitHub: [@LJuanes20](https://github.com/<tu-usuario>)
+- GitHub: [@LJuanes20](https://github.com/LJuanes20)
 - LinkedIn: [in/ljuanes25](https://www.linkedin.com/in/ljuanes25/)
